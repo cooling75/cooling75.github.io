@@ -29,7 +29,7 @@ github_username:  cooling75
 
 assets_path: "/assets"
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
