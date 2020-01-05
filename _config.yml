@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Jan Laudahn
+title: cooling75
 email: jan@laudart.de
 description: >- # this means to ignore newlines until "baseurl:"
   This should contain information about my new jekyll based site.
