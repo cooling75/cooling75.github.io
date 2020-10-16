@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Invoke kubectl in k3s without sudo in RaspberryPi OS"
+date:   2020-10-16 17:17:00 +0200
+categories: k3s blog
+---
+
+By simply looking at the output I had to do a 'chmod +r /etc/rancher/k3s/k3s.yml'.
+After that I was able to invoke kubectl without typing 'sudo' all the time.
