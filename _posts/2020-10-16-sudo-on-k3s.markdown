@@ -6,4 +6,6 @@ categories: k3s blog
 ---
 
 By simply looking at the output I had to do a 'chmod +r /etc/rancher/k3s/k3s.yml'.
-After that I was able to invoke kubectl without typing 'sudo' all the time.
+After that I was able to invoke kubectl without typing 'sudo' all the time.  
+## Update 21.10.2020
+Unfortunately this workaround is not working after a reboot, you have to change it again.
