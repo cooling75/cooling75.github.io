@@ -22,11 +22,8 @@ title: cooling75
 email: jan@laudart.de
 description: >- # this means to ignore newlines until "baseurl:"
   This blog will losely cover my experiments and learnings with RaspberryPi, Linux, VMware, Kubernetes and so on.
-  If you have any questions regarding any topic just get in contact with me. :)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: cooling75
-github_username:  cooling75
 
 # assets_path: "/assets"
 # Build settings
