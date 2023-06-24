@@ -42,3 +42,5 @@ This can be identified by not having the "archived-" prefix on the NFS share.
 3. Rename backuped file to db.sqlite3
 4. Delete the pod to initiate restart
 5. Verify that restore was successful
+
+[Vaultwarden Backup Hints](https://github.com/dani-garcia/vaultwarden/wiki/Backing-up-your-vault#restoring-backup-data)
