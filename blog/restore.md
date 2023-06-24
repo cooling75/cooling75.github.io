@@ -44,3 +44,11 @@ This can be identified by not having the "archived-" prefix on the NFS share.
 5. Verify that restore was successful
 
 [Vaultwarden Backup Hints](https://github.com/dani-garcia/vaultwarden/wiki/Backing-up-your-vault#restoring-backup-data)
+
+## Grafana
+
+### Kubernetes
+
+#### nfs-client
+
+Just copy grafana.db from backup (or "archived-xxx" folder) to already existing (active) pvc in NFS share. Delete currently running pod and wait for it to be restarted from deployment. Login should work again with old account(s).
