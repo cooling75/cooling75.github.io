@@ -15,6 +15,9 @@ influxd restore -portable /path/to/backup
 
 ## Vaultwarden
 
+
+### Restore in Docker
+
 Fetch backuped db.sqlite3 file and mount the parent directory in the data folder inside the container.
 
 ```bash
@@ -25,3 +28,17 @@ vaultwarden/server:latest
 ```
 
 Visit localhost and login to vaultwarden as usual.
+
+
+### Restore in Kubernetes
+
+#### nfs-client
+
+Copy backuped db.sqlite3 file from backup location to NFS share which is actively in use.  
+This can be identified by not having the "archived-" prefix on the NFS share.  
+
+1. Copy the file (using a different name then db.sqlite3 since this is already existing)
+2. Delete .wal and .shm files
+3. Rename backuped file to db.sqlite3
+4. Delete the pod to initiate restart
+5. Verify that restore was successful
